@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Noto Sans', Arial, sans-serif;
+	font-size: 0.8em;
+	color: #262626;
+	background-color: #E5E5E5;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.clearfix:before
+, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.header {
+	padding: 10px;
+	height: 50px;
+	background-color: #0288d1;
+	box-shadow: 0px 1px 2px #AAA;
+
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.content {
+	margin: 70px auto;
+	width: 1000px;
+}
+
+/*
+* General card
+**/
+.card {
+	background-color: #FFF;
+	box-shadow: 0px 1px 3px #BBB;
+	border-radius: 1px;
+}
+
+
+/*
+* Top bar - title bar
+**/
+.topbar {
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+/*
+* Side bar - menu
+**/
+.sidebar {
+	width: 265px;
+	float: left;
+	margin-right: 20px;
+}
+
+.sidebar-item {
+	display: block;
+	padding: 10px 13px;
+	
+
+	border-left: 2px solid #FFF;
+	border-bottom: 1px solid #E5E5E5;
+	text-decoration: none;
+
+	color: #262626;
+}
+
+.sidebar-item:hover {
+	
+}
+
+.sidebar-item--active {
+	font-weight: bold;
+	border-left-color: #0288d1;
+	background-color: #EEE;
+}
+
+
+
+/*
+* Content listing
+**/
+.list-container {
+	width: 715px;
+	float: left;
+}
+
+.list-container-item {
+	padding: 12px 15px;
+	border-bottom: 1px solid #E5E5E5;
+}
