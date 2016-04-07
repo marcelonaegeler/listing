@@ -15,6 +15,8 @@ ul {
 	list-style-type: none;
 }
 
+.left { float: left; }
+
 .clearfix:before
 , .clearfix:after {
 	content: " ";
@@ -25,10 +27,13 @@ ul {
 	clear: both;
 }
 
+/*
+* Navigation header
+**/
 .header {
-	padding: 10px;
+	padding: 7px;
 	height: 50px;
-	background-color: #0288d1;
+	background-color: #1976D2;
 	box-shadow: 0px 1px 2px #AAA;
 
 	position: fixed;
@@ -38,6 +43,116 @@ ul {
 	left: 0;
 }
 
+.nav-center {
+	margin: 0 auto;
+	width: 1000px;
+	text-align: center;
+}
+
+.nav-item {
+	display: inline-block;
+	border-radius: 3px;
+}
+
+.nav-link {
+	display: block;
+	padding: 8px;
+	color: #FFF;
+
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: lowercase;
+}
+
+.nav-link .icon {
+	width: 10px;
+	height: 10px;
+
+}
+
+.nav-item:hover, .nav-item.active {
+	background-color: rgba( 255, 255, 255, 0.10 );
+}
+
+
+/* Dropdown */
+.nav-dropdown {
+	position: relative;
+}
+
+.nav-dropdown-content {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: -106px;
+
+	width: 280px;
+	padding-top: 10px;
+
+	text-align: left;
+}
+
+.nav-dropdown-icon {
+	position: absolute;
+	top: 0;
+	left: 127px;
+
+	display: block;
+	width: 25px;
+	height: 13px;
+	overflow: hidden;
+}
+
+.nav-dropdown-icon-rotate {
+	display: block;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+
+	width: 18px;
+	height: 18px;
+	/*background-color: #FCFCFC;*/
+	background-color: #42A5F5;
+	border-radius: 3px;
+
+	transform: rotate( 45deg );
+}
+
+.nav-dropdown-background {
+	/*background-color: #FCFCFC;*/
+	background-color: #42A5F5;
+	box-shadow: 1px 1px 1px #AAA;
+}
+
+.nav-dropdown-column {
+	width: 50%;
+	margin: 10px 0;
+}
+
+.nav-dropdown-column + .nav-dropdown-column {
+	border-left: 1px solid #EFEFEF;
+}
+
+.nav-dropdown-link {
+	display: block;
+	padding: 5px;
+	margin: 0 6px;
+
+	color: #FFF;
+	text-decoration: none;
+}
+
+.nav-dropdown-link:hover {
+	background-color: rgba( 255, 255, 255, 0.10 );
+}
+
+.nav-dropdown:hover .nav-dropdown-content {
+	display: block;
+}
+
+/*
+* Content
+**/
 .content {
 	margin: 70px auto;
 	width: 1000px;
@@ -90,7 +205,7 @@ ul {
 
 .sidebar-item--active {
 	font-weight: bold;
-	border-left-color: #0288d1;
+	border-left-color: #4285f4;
 	background-color: #EEE;
 }
 
