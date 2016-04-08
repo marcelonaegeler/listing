@@ -43,14 +43,14 @@
 
 	width: 18px;
 	height: 18px;
-	background-color: #42A5F5;
+	background-color: #43A047;
 	border-radius: 3px;
 
 	transform: rotate( 45deg );
 }
 
 .nav-dropdown-background {
-	background-color: #42A5F5;
+	background-color: #43A047;
 	box-shadow: 1px 1px 1px #AAA;
 }
 

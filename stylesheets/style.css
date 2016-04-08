@@ -17,23 +17,14 @@ ul {
 
 .left { float: left; }
 
-.clearfix:before
-, .clearfix:after {
-	content: " ";
-	display: table;
-}
-
-.clearfix:after {
-	clear: both;
-}
-
 /*
 * Navigation header
 **/
 .header {
 	padding: 7px;
 	height: 50px;
-	background-color: #1976D2;
+	/*background-color: #1976D2;*/
+	background-color: #2E7D32;
 	box-shadow: 0px 1px 2px #AAA;
 
 	position: fixed;
@@ -84,6 +75,10 @@ ul {
 	width: 1000px;
 }
 
+.content-mid {
+	width: 760px;
+}
+
 /*
 * General card
 **/
@@ -99,7 +94,11 @@ ul {
 **/
 .topbar {
 	padding: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
+}
+
+.heading-1 {
+	font-size: 1.7em;
 }
 
 
@@ -110,7 +109,7 @@ ul {
 .sidebar {
 	width: 265px;
 	float: left;
-	margin-right: 20px;
+	margin-right: 15px;
 }
 
 .sidebar-item {
@@ -141,7 +140,7 @@ ul {
 * Content listing
 **/
 .list-container {
-	width: 715px;
+	width: 720px;
 	float: left;
 }
 
@@ -149,3 +148,73 @@ ul {
 	padding: 12px 15px;
 	border-bottom: 1px solid #E5E5E5;
 }
+
+
+/*
+* Filters
+**/
+.filters {
+	padding: 15px;
+	color: #666;
+	font-size: 14px;
+}
+
+.filters .highlight {
+	color: #78909C;
+	cursor: pointer;
+}
+
+/*
+* Content listing by date
+**/
+.list-by-date {
+
+}
+
+
+.period-item {
+	position: relative;
+}
+
+.period-date {
+	position: absolute;
+	top: 0;
+	right: 100%;
+
+	padding: 10px;
+	border-top: 1px solid #d9d9d9;
+	color: #78909C;
+}
+
+.period-list-item {
+	padding: 10px;
+	border-top: 1px solid #d9d9d9;
+	color: #666;
+}
+
+.period-list-item-name {
+	display: inline-block;
+	margin-left: 5px;
+
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
+
+/*
+* Marker
+**/
+.circular-marker {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+}
+
+
+.bg-red {
+	background-color: red;
+}
+
