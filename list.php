@@ -60,7 +60,10 @@
 					</div>
 					<div class="column column-3">categoria 01</div>
 					<div class="column column-3">R$50,00 (lucro R$15,00)</div>
-					<div class="column column-2">Editar</div>
+					<div class="column column-1">
+						
+					</div>
+					<div class="column column-1">Editar</div>
 				</div>
 
 				<div class="period-list-item row">
